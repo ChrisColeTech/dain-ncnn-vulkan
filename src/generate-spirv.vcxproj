@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25C50401-9511-3A66-AD84-0A0C46890575}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>generate-spirv</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\correlation.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source correlation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source correlation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source correlation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source correlation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\correlation_pack4to1.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source correlation_pack4to1.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source correlation_pack4to1.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source correlation_pack4to1.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source correlation_pack4to1.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/correlation_pack4to1.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\dain_postproc.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source dain_postproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source dain_postproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source dain_postproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source dain_postproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_postproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\dain_preproc.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source dain_preproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source dain_preproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source dain_preproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source dain_preproc.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/dain_preproc.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_average.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source depthflowprojection_average.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source depthflowprojection_average.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source depthflowprojection_average.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source depthflowprojection_average.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_average.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_fillhole.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source depthflowprojection_fillhole.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source depthflowprojection_fillhole.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source depthflowprojection_fillhole.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source depthflowprojection_fillhole.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_fillhole.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_project.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source depthflowprojection_project.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source depthflowprojection_project.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source depthflowprojection_project.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source depthflowprojection_project.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_project.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_zero.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source depthflowprojection_zero.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source depthflowprojection_zero.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source depthflowprojection_zero.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source depthflowprojection_zero.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/depthflowprojection_zero.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\filterinterpolation.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source filterinterpolation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source filterinterpolation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source filterinterpolation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source filterinterpolation.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\filterinterpolation_pack4.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source filterinterpolation_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source filterinterpolation_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source filterinterpolation_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source filterinterpolation_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/filterinterpolation_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\opticalflowwarp.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source opticalflowwarp.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source opticalflowwarp.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source opticalflowwarp.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source opticalflowwarp.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\opticalflowwarp_pack4.comp.hex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing shader source opticalflowwarp_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing shader source opticalflowwarp_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing shader source opticalflowwarp_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing shader source opticalflowwarp_pack4.comp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DSHADER_SRC=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp -DSHADER_COMP_HEADER=C:/Projects/dain-ncnn-vulkan/src/opticalflowwarp_pack4.comp.hex.h -P C:/Projects/dain-ncnn-vulkan/src/generate_shader_comp_header.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\45241bed5ddc8de23057f5d4b2a52e58\generate-spirv.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\dain_preproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\dain_postproc.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\correlation_pack4to1.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_zero.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_project.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_average.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\depthflowprojection_fillhole.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\filterinterpolation_pack4.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp.comp.hex.h;C:\Projects\dain-ncnn-vulkan\src\opticalflowwarp_pack4.comp.hex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ZERO_CHECK.vcxproj">
+      <Project>{FE667BF9-947F-308F-93F3-755D7D5200B1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

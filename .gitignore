@@ -1,2 +1,7 @@
 src/cmake-build-debug-visual-studio/
 src/cmake-build-debug/
+src/x64/Debug/
+src/CMakeFiles/
+.vs
+src/dain-ncnn-vulkan.dir/Debug/
+

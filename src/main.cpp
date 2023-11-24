@@ -453,7 +453,7 @@ int main(int argc, char** argv)
     std::vector<int> jobs_proc;
     int jobs_save = 2;
     int verbose = 0;
-    path_t pattern_format = PATHSTR("%08d.png");
+    path_t pattern_format;
 
 #if _WIN32
     setlocale(LC_ALL, "");
@@ -610,48 +610,45 @@ int main(int argc, char** argv)
         }
     }
 
-    path_t pattern = get_file_name_without_extension(pattern_format);
     path_t format = get_file_extension(pattern_format);
+    path_t pattern = get_pattern(pattern_format);
 
-    if (format.empty())
-    {
-        pattern = PATHSTR("%08d");
-        format = pattern_format;
-    }
+    if (!pattern_format.empty()) {
 
-    if (pattern.empty())
-    {
-        pattern = PATHSTR("%08d");
-    }
-
-    if (!path_is_directory(outputpath))
-    {
-        // guess format from outputpath no matter what format argument specified
-        path_t ext = get_file_extension(outputpath);
-
-        if (ext == PATHSTR("png") || ext == PATHSTR("PNG"))
+        if (format.empty())
         {
-            format = PATHSTR("png");
+            format = pattern_format;
         }
-        else if (ext == PATHSTR("webp") || ext == PATHSTR("WEBP"))
-        {
-            format = PATHSTR("webp");
-        }
-        else if (ext == PATHSTR("jpg") || ext == PATHSTR("JPG") || ext == PATHSTR("jpeg") || ext == PATHSTR("JPEG"))
-        {
-            format = PATHSTR("jpg");
-        }
-        else
-        {
-            fprintf(stderr, "invalid outputpath extension type\n");
-            return -1;
-        }
-    }
 
-    if (format != PATHSTR("png") && format != PATHSTR("webp") && format != PATHSTR("jpg"))
-    {
-        fprintf(stderr, "invalid format argument\n");
-        return -1;
+        if (!path_is_directory(outputpath))
+        {
+            // guess format from outputpath no matter what format argument specified
+            path_t ext = get_file_extension(outputpath);
+
+            if (ext == PATHSTR("png"))
+            {
+                format = PATHSTR("png");
+            }
+            else if (ext == PATHSTR("webp"))
+            {
+                format = PATHSTR("webp");
+            }
+            else if (ext == PATHSTR("jpg") || ext == PATHSTR("jpeg"))
+            {
+                format = PATHSTR("jpg");
+            }
+            else
+            {
+                fprintf(stderr, "invalid outputpath extension type\n");
+                return -1;
+            }
+
+            if (format != PATHSTR("png") && format != PATHSTR("webp") && format != PATHSTR("jpg"))
+            {
+                fprintf(stderr, "invalid format argument\n");
+                return -1;
+            }
+        }
     }
 
     // collect input and output filepath
@@ -703,12 +700,25 @@ int main(int argc, char** argv)
 
 #if _WIN32
                 wchar_t tmp[256];
-                swprintf(tmp, pattern.c_str(), i+1);
+                path_t output_filename;
+                if (pattern.empty() && format.empty()) {
+                    output_filename = get_file_name_without_extension(filename0) + PATHSTR('.') + get_file_extension(filename0);
+                }
+                else if (!pattern.empty() && !format.empty()) {
+                    swprintf(tmp, pattern.c_str(), i + 1);
+                    output_filename = path_t(tmp) + PATHSTR('.') + format;
+            }
+                else if (pattern.empty() && !format.empty()) {
+                    swprintf(tmp, pattern.c_str(), i + 1);
+                    output_filename = get_file_name_without_extension(filename0) + PATHSTR('.') + format;
+                }
+                else {
+                    output_filename = path_t(tmp) + PATHSTR('.') + get_file_extension(filename0);
+                }
 #else
                 char tmp[256];
                 sprintf(tmp, pattern.c_str(), i+1); // ffmpeg start from 1
 #endif
-                path_t output_filename = path_t(tmp) + PATHSTR('.') + format;
 
                 input0_files[i] = inputpath + PATHSTR('/') + filename0;
                 input1_files[i] = inputpath + PATHSTR('/') + filename1;

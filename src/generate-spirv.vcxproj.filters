@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\correlation.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\correlation_pack4to1.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\dain_postproc.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\dain_preproc.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_average.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_fillhole.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_project.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\depthflowprojection_zero.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\filterinterpolation.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\filterinterpolation_pack4.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\opticalflowwarp.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\59ba60f6e947c0c5d84bcc70f2de5e0a\opticalflowwarp_pack4.comp.hex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\45241bed5ddc8de23057f5d4b2a52e58\generate-spirv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate-spirv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{638A5E3F-6BC8-38A0-90B9-57FC1BC6D475}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

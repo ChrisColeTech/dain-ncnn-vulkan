@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0EC687C9-09DE-358F-A96F-75D6FAC71F43}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\dain-ncnn-vulkan\src;C:\Projects\dain-ncnn-vulkan\src\libwebp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\dain-ncnn-vulkan\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Projects/dain-ncnn-vulkan/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/dain-ncnn-vulkan/src -BC:/Projects/dain-ncnn-vulkan/src --check-stamp-file C:/Projects/dain-ncnn-vulkan/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-C.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\CMakeLists-CXX.txt.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\foo.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIPOSupported\main.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\dain-ncnn-vulkan\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ZERO_CHECK.vcxproj">
+      <Project>{FE667BF9-947F-308F-93F3-755D7D5200B1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\glslang\GenericCodeGen.vcxproj">
+      <Project>{DA19BD45-358F-3BB1-ABFB-A0F4B68F620A}</Project>
+      <Name>GenericCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\glslang\MachineIndependent.vcxproj">
+      <Project>{CB725A8E-0B25-3A64-B56A-6DE762982A32}</Project>
+      <Name>MachineIndependent</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\OGLCompilersDLL\OGLCompiler.vcxproj">
+      <Project>{4BA4EF74-1E3B-3B2C-B96F-7CCA8AE29EB3}</Project>
+      <Name>OGLCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\glslang\OSDependent\Windows\OSDependent.vcxproj">
+      <Project>{02DDDCB7-10F9-3858-9E7A-AEE3DA2F18CF}</Project>
+      <Name>OSDependent</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\SPIRV\SPIRV.vcxproj">
+      <Project>{C46CF849-C44A-391D-A641-5331AA2FF988}</Project>
+      <Name>SPIRV</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\dain-ncnn-vulkan.vcxproj">
+      <Project>{317A1CDB-E07F-364B-BB65-6D1E0FF6B0A5}</Project>
+      <Name>dain-ncnn-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\glslang\glslang.vcxproj">
+      <Project>{FA371AB9-58E9-3441-8BA3-05634FFE4673}</Project>
+      <Name>glslang</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\glslang\glslang\glslang-default-resource-limits.vcxproj">
+      <Project>{C8AF158C-5268-373E-BF56-107B13FF17B6}</Project>
+      <Name>glslang-default-resource-limits</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\ncnn\src\ncnn.vcxproj">
+      <Project>{F8D884B0-EF62-3D74-BED0-5FC726DC6850}</Project>
+      <Name>ncnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webp.vcxproj">
+      <Project>{D15402EF-8EDA-3D1B-9C09-B3F2AA067A75}</Project>
+      <Name>webp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpdecode.vcxproj">
+      <Project>{B50653B9-A199-316E-8C6A-69199BF24052}</Project>
+      <Name>webpdecode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpdecoder.vcxproj">
+      <Project>{8FDC4CB5-8361-3140-8440-241B8639FA02}</Project>
+      <Name>webpdecoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpdemux.vcxproj">
+      <Project>{FE5AE960-5406-346B-A426-32CF88CD31B8}</Project>
+      <Name>webpdemux</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpdsp.vcxproj">
+      <Project>{8B9A5F43-4867-3505-A559-DC7181C6F3D4}</Project>
+      <Name>webpdsp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpdspdecode.vcxproj">
+      <Project>{1CC07994-97D0-3AC8-9A10-FEC7BEDE5BA9}</Project>
+      <Name>webpdspdecode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webpencode.vcxproj">
+      <Project>{0ED451C7-A2CA-3A80-B235-2656566AF7CB}</Project>
+      <Name>webpencode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webputils.vcxproj">
+      <Project>{D0E15974-C82A-3287-8CBA-926CD901B98E}</Project>
+      <Name>webputils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\dain-ncnn-vulkan\src\libwebp\webputilsdecode.vcxproj">
+      <Project>{1D804187-4CB6-38A5-B7E4-905FC56AEA1B}</Project>
+      <Name>webputilsdecode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
