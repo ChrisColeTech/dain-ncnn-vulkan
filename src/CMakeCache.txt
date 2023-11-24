@@ -417,6 +417,9 @@ NCNN_SIMPLEOMP:BOOL=OFF
 //minimal cpp stl structure emulation
 NCNN_SIMPLESTL:BOOL=OFF
 
+//minimal in-house vulkan loader
+NCNN_SIMPLEVK:BOOL=ON
+
 //optimize x86 platform with sse2 extension
 NCNN_SSE2:BOOL=ON
 
@@ -894,7 +897,7 @@ ncnn_BINARY_DIR:STATIC=C:/Projects/dain-ncnn-vulkan/src/ncnn
 ncnn_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-ncnn_LIB_DEPENDS:STATIC=general;Vulkan::Vulkan;general;glslang;general;SPIRV;
+ncnn_LIB_DEPENDS:STATIC=general;glslang;general;SPIRV;
 
 //Value Computed by CMake
 ncnn_SOURCE_DIR:STATIC=C:/Projects/dain-ncnn-vulkan/src/ncnn

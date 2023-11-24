@@ -143,23 +143,6 @@ static path_t get_file_extension(const path_t& path)
 
     return lowercasePath.substr(dot + 1);
 }
-static path_t get_file_name_without_extension(const path_t& path)
-{
-    size_t dot = path.rfind(PATHSTR('.'));
-    if (dot == path_t::npos)
-        return path;
-
-    return path.substr(0, dot);
-}
-
-static path_t get_file_extension(const path_t& path)
-{
-    size_t dot = path.rfind(PATHSTR('.'));
-    if (dot == path_t::npos)
-        return path_t();
-
-    return path.substr(dot + 1);
-}
 
 #if _WIN32
 static path_t get_executable_directory()

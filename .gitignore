@@ -5,3 +5,8 @@ src/CMakeFiles/
 .vs
 src/dain-ncnn-vulkan.dir/Debug/
 
+src/Debug/*
+src/ncnn/
+src/libwebp/
+src/dain-ncnn-vulkan.vcxproj
+src/Debug/dain-ncnn-vulkan.pdb
